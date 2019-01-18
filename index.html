@@ -12,8 +12,9 @@
     <title>Pure Bootstrap Website</title>
   </head>
   <body>
+    <!-- Navbar -->
     <!-- nav.navbar.navbar-expand-md.navbar-light.bg-dark>(a.navbar-brand>i.fas.fa-child.text-warning.fa-2x)+ul.navbar-nav>(li.nav-item>a.nav-link.text-light.text-uppercase.font-weight-bold.px-3)*5    -->
-    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
       <a href="#" class="navbar-brand"><i class="fas fa-child text-warning fa-2x"></i></a>
       <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon"></span></button>
 
@@ -33,9 +34,9 @@
           <li class="nav-item"><a href="#" class="nav-link text-light text-uppercase font-weight-bold px-3">Contact</a></li>
         </ul>
         
-        <form class="form-inline ml-3">
+        <form class="form-inline ml-3u">
           <div class="input-group">
-            <input type="text" class="form-control" nplaceholder="Search">
+            <input type="text" class="form-control" placeholder="Search">
             <div class="input-group-append">
               <button type="button" class="btn"><i class="fas fa-search text-muted"></i></button>
             </div>
@@ -43,6 +44,20 @@
         </form>
       </div>
     </nav>
+    <!-- End Navbar -->
+
+    <!-- Banner -->
+    <div class="container-fluid">
+      <div class="row bg-info justify-content-center align-items-center" style="height: 100vh">
+        <div class="col-sm-10 text-center">
+          <h1 class="display-2 text-capitalize"><span class="text-warning">Pure Bootstrap</span><span class="text-white font-weight-bold">Website</span></h1>
+          <h2 class="font-weight-light font-italic text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <a href="#" class="btn btn-warning btn-lg px-4 m-3">Press Here</a>
+          <a href="#" class="btn btn-danger btn-lg px-4 m-3">Press Here</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner -->
     
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
